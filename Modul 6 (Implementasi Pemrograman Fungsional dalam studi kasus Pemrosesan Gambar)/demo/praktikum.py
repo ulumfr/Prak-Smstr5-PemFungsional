@@ -27,9 +27,10 @@ text = "Informatika JOSSS!"
 text_width = draw.textlength(text, font)
 text_height = draw.textlength(text, font)
 text_position = ((new_logo.width - text_width) // 2, new_logo.height - text_height + 162)
+logo_position = ((finalBg.width - new_logo.width) // 2, (finalBg.height - new_logo.height) // 2)
 draw.text(text_position, text, font=font, fill="black")
 
-finalBg.paste(new_logo, (600, 300))
+finalBg.paste(new_logo, logo_position)
 
 # TODO 6 : Simpan gambar dengan nama "tugas_praktikum_enam.jpg"
 finalBg.show()
